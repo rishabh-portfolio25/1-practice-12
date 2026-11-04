@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful HTML Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1000px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 15px;
+            padding: 25px;
+            width: 280px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+        }
+
+        .card.pink { border-top: 8px solid #ff4b5c; }
+        .card.yellow { border-top: 8px solid #ffbb00; }
+        .card.blue { border-top: 8px solid #00b4d8; }
+        .card.green { border-top: 8px solid #2ec4b6; }
+
+        .card h2 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 25px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: opacity 0.2s ease;
+        }
+
+        .btn:hover {
+            opacity: 0.85;
+        }
+
+        .btn.pink { background-color: #ff4b5c; }
+        .btn.yellow { background-color: #ffbb00; color: #333; }
+        .btn.blue { background-color: #00b4d8; }
+        .btn.green { background-color: #2ec4b6; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Colorful Website</h1>
+        <p>Built with vibrant CSS gradients and custom cards</p>
+    </header>
+
+    <div class="container">
+        <div class="card pink">
+            <h2>Passion Red</h2>
+            <p>Vibrant energy and bold statements come alive with rich warm undertones.</p>
+            <a href="#" class="btn pink">Explore</a>
+        </div>
+
+        <div class="card yellow">
+            <h2>Sunny Yellow</h2>
+            <p>Bright, cheerful highlights that bring warmth and optimism to the layout.</p>
+            <a href="#" class="btn yellow">Explore</a>
+        </div>
+
+        <div class="card blue">
+            <h2>Ocean Blue</h2>
+            <p>Cool, refreshing tones inspired by deep waters and clear summer skies.</p>
+            <a href="#" class="btn blue">Explore</a>
+        </div>
+
+        <div class="card green">
+            <h2>Mint Green</h2>
+            <p>Fresh and balanced hues that give a clean, modern, and natural vibe.</p>
+            <a href="#" class="btn green">Explore</a>
+        </div>
+    </div>
+
+</body>
+</html>
+
